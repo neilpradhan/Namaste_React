@@ -1,3 +1,43 @@
-#container {
-    background-color: red;;
+.header {
+    display: flex;
+    justify-content: space-between;
+    border: solid black;
+}
+
+.logo {
+    display: flex;
+    justify-content: left;
+    height: 200px;
+}
+
+.nav-items > ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-items > ul > li {
+    padding: 0px 20px;
+    margin: 10px;
+    font-size: 24px;
+}
+
+/* Container for all restaurant cards */
+.res-container {
+    display: flex;           /* Enables Flexbox layout */
+    flex-wrap: wrap;         /* Allows wrapping to the next line if necessary */
+    gap: 10px;               /* Adds space between the cards */
+}
+
+/* Individual restaurant card styling */
+.res-card {
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: -1px 5px 10px 5px rgba(42, 42, 42, 0.2);
+    padding: 10px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.res-card:hover {
+    transform: scale(1.05);
 }
